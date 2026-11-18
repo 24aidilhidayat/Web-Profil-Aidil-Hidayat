@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aidil Hidayat | UI/UX Designer & Enthusiast</title>
+  <meta name="description" content="Website CV & Portofolio Aidil Hidayat - UI/UX Designer & Mahasiswa Sistem Informasi yang berfokus pada desain produk digital berorientasi pengguna.">
+  <meta name="keywords" content="Aidil Hidayat, UI/UX Designer, Figma, Portfolio, CV, Web Designer, Sistem Informasi">
+  
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="header" id="header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-badge">AH</span>
+        <span class="logo-text">Aidil<span class="highlight">.design</span></span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">Tentang</a></li>
+          <li><a href="#skills" class="nav-link">Keahlian</a></li>
+          <li><a href="#experience" class="nav-link">Pengalaman</a></li>
+          <li><a href="#education" class="nav-link">Pendidikan</a></li>
+          <li><a href="#certifications" class="nav-link">Sertifikasi</a></li>
+          <li><a href="#contact" class="nav-link">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="icon-btn" aria-label="Ganti Mode Tema" title="Ganti Mode Gelap/Terang">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Print/Download CV Button -->
+        <button id="print-cv-btn" class="btn btn-secondary-sm hide-mobile" title="Cetak atau Simpan PDF">
+          <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+          <span>Cetak CV</span>
+        </button>
+
+        <a href="#contact" class="btn btn-primary-sm hide-mobile">Hire Me</a>
+
+        <!-- Hamburger Menu for Mobile -->
+        <button id="hamburger-btn" class="hamburger-btn" aria-label="Buka Menu Navigasi">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <!-- Availability Tag -->
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Tersedia untuk Peluang UI/UX Design & Proyek Digital</span>
+          </div>
+
+          <h1 class="hero-title">
+            Halo, saya <span class="gradient-text">Aidil Hidayat</span>
+          </h1>
+
+          <div class="hero-role-wrapper">
+            <span class="role-badge">UI/UX Designer</span>
+            <span class="role-separator">•</span>
+            <span class="role-sub">Digital Product Enthusiast</span>
+          </div>
+
+          <p class="hero-description">
+            Merancang produk digital yang berakar pada empati pengguna. Menggabungkan estetika visual modern, hierarki tata letak intuitif, serta ketelitian tinggi dari konsep <i>user flow</i> hingga <i>prototype</i> interaktif.
+          </p>
+
+          <!-- Contact Quick Info -->
+          <div class="hero-quick-info">
+            <div class="info-item">
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Kuala Dua, Kubu Raya</span>
+            </div>
+            <div class="info-item">
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:24aidilhidayat@gmail.com">24aidilhidayat@gmail.com</a>
+            </div>
+            <div class="info-item">
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <a href="tel:089619591224">089619591224</a>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="hero-actions">
+            <a href="https://wa.me/6289619591224?text=Halo%20Aidil,%20saya%20tertarik%20dengan%20profil%20UI/UX%20Anda" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+              <span>Hubungi via WhatsApp</span>
+            </a>
+            <a href="#about" class="btn btn-secondary">
+              <span>Jelajahi Profil</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero UI/UX Interactive Visual Card -->
+        <div class="hero-visual">
+          <div class="visual-card-glow"></div>
+          <div class="figma-mockup-card">
+            <!-- Mockup Header -->
+            <div class="mockup-header">
+              <div class="mockup-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="mockup-title">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                  <path d="M8 2h8a4 4 0 0 1 4 4v0a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4v0a4 4 0 0 1 4-4z" fill="#00B6F0"/>
+                  <circle cx="8" cy="14" r="4" fill="#067FF9"/>
+                  <circle cx="16" cy="14" r="4" fill="#04D99D"/>
+                </svg>
+                <span>Figma Canvas • Prototype.fig</span>
+              </div>
+              <div class="mockup-scale">100%</div>
+            </div>
+
+            <!-- Canvas Area: Wireframe & User Flow Representation -->
+            <div class="mockup-canvas">
+              <!-- Node 1: User Flow Entry -->
+              <div class="canvas-node node-flow">
+                <div class="node-tag">User Flow</div>
+                <div class="node-title">Discovery & Research</div>
+                <div class="node-meta">User Needs • Pain Points</div>
+              </div>
+
+              <!-- Connecting Line -->
+              <div class="canvas-connector">
+                <span class="connector-line"></span>
+                <span class="connector-arrow">▶</span>
+              </div>
+
+              <!-- Node 2: Wireframe Card -->
+              <div class="canvas-node node-wireframe">
+                <div class="node-tag wire-tag">Figma Wireframe</div>
+                <div class="wireframe-skeleton">
+                  <div class="sk-bar sk-title"></div>
+                  <div class="sk-grid">
+                    <div class="sk-box"></div>
+                    <div class="sk-box"></div>
+                  </div>
+                  <div class="sk-btn"></div>
+                </div>
+              </div>
+
+              <!-- Floating UI Badges -->
+              <div class="floating-badge badge-figma">
+                <span class="badge-icon">🎨</span>
+                <div>
+                  <strong class="badge-headline">Visual Hierarchy</strong>
+                  <span class="badge-sub">Clean Layouting</span>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-ux">
+                <span class="badge-icon">⚡</span>
+                <div>
+                  <strong class="badge-headline">Intuitive UX</strong>
+                  <span class="badge-sub">High Efficiency</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mockup Footer Tools -->
+            <div class="mockup-footer">
+              <span class="tool-tag active">Auto-Layout</span>
+              <span class="tool-tag">Components</span>
+              <span class="tool-tag">Interactive Prototyping</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION (PROFIL) -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-sub">Tentang Saya</span>
+          <h2 class="section-title">Profil Profesional</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card main-bio-card">
+            <div class="bio-icon-box">
+              <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <h3 class="card-heading">Pendekatan Desain Berpusat Pada Pengguna</h3>
+            <p class="bio-text">
+              Mahasiswa yang memiliki minat mendalam pada bidang <strong>UI/UX Design</strong> dan perancangan produk digital berbasis kebutuhan pengguna. Menguasai pembuatan <strong>user flow, wireframe, hingga prototype interaktif menggunakan Figma</strong>. 
+            </p>
+            <p class="bio-text">
+              Terbiasa melakukan <strong>analisis antarmuka dan riset pengguna</strong> untuk menghadirkan solusi desain yang tidak hanya menarik secara visual, tetapi juga intuitif, mudah digunakan, dan efisien bagi pengguna maupun bisnis.
+            </p>
+
+            <div class="signature-block">
+              <div class="signature-details">
+                <span class="sig-name">Aidil Hidayat</span>
+                <span class="sig-title">UI/UX Enthusiast & Sistem Informasi</span>
+              </div>
+              <div class="location-chip">
+                <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Kuala Dua, Kubu Raya</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlight Pillars -->
+          <div class="about-pillars">
+            <div class="pillar-card">
+              <div class="pillar-icon">🎯</div>
+              <div>
+                <h4 class="pillar-title">User Flow & Wireframing</h4>
+                <p class="pillar-desc">Menata alur pengguna yang logis dan merancang kerangka awal (low-fidelity) dengan presisi sebelum melangkah ke visual final.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">💎</div>
+              <div>
+                <h4 class="pillar-title">Figma Interactive Prototyping</h4>
+                <p class="pillar-desc">Mengubah desain statis menjadi purwarupa yang terasa hidup dengan micro-interaction dan komponen reusable.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">🔍</div>
+              <div>
+                <h4 class="pillar-title">Quality Control & Ketelitian</h4>
+                <p class="pillar-desc">Memiliki mata tajam terhadap detail visual, konsistensi margin, tipografi, dan kepatuhan terhadap standar kelayakan produk.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION (KEMAMPUAN UTAMA) -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-sub">Kompetensi</span>
+          <h2 class="section-title">Kemampuan Utama</h2>
+          <div class="title-bar"></div>
+          <p class="section-lead">Kombinasi keahlian desain antarmuka pengguna, pemikiran analitis, dan kolaborasi tim yang solid.</p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1: Design & Prototyping -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon design-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none">
+                  <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                  <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                  <path d="M2 2l7.586 7.586"></path>
+                  <circle cx="11" cy="11" r="2"></circle>
+                </svg>
+              </div>
+              <h3 class="category-title">UI/UX & Desain Visual</h3>
+            </div>
+
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">UI/UX Design</span>
+                  <span class="skill-badge primary-badge">Core Skill</span>
+                </div>
+                <p class="skill-desc">Perancangan antarmuka digital yang intuitif dan memprioritaskan kenyamanan pengguna.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Figma & Layouting Visual</span>
+                  <span class="skill-badge primary-badge">Expertise</span>
+                </div>
+                <p class="skill-desc">Penguasaan layouting, auto-layout, grid system, dan komponen desain interaktif.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">User Flow & Wireframing</span>
+                  <span class="skill-badge">Methodology</span>
+                </div>
+                <p class="skill-desc">Merangkai alur perjalanan pengguna yang seamless dan minim friksi.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Research & Strategy -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon analytics-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+              <h3 class="category-title">Strategi & Analisis</h3>
+            </div>
+
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Analytics</span>
+                  <span class="skill-badge accent-badge">Analytical</span>
+                </div>
+                <p class="skill-desc">Analisis antarmuka dan peninjauan data pengguna untuk mendukung keputusan desain.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Copywriting & Content Planning</span>
+                  <span class="skill-badge accent-badge">UX Writing</span>
+                </div>
+                <p class="skill-desc">Penyusunan teks antarmuka (microcopy) yang komunikatif dan terarah.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Riset Pengguna</span>
+                  <span class="skill-badge">User-Centric</span>
+                </div>
+                <p class="skill-desc">Identifikasi kebutuhan, kebiasaan, dan ekspektasi pengguna digital.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Execution & Collaboration -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon operational-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Kualitas & Kolaborasi</h3>
+            </div>
+
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Quality Control & Ketelitian Detail</span>
+                  <span class="skill-badge success-badge">Precision</span>
+                </div>
+                <p class="skill-desc">Standarisasi tinggi untuk meminimalkan kecacatan hasil dan menjaga konsistensi.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Problem Solving & Kerja Sama Tim</span>
+                  <span class="skill-badge success-badge">Teamwork</span>
+                </div>
+                <p class="skill-desc">Kemampuan memecahkan masalah secara taktis dan bekerja harmonis lintas peran.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Komunikasi & Pelayanan Pelanggan</span>
+                  <span class="skill-badge">Interpersonal</span>
+                </div>
+                <p class="skill-desc">Komunikasi persuasif, empati tinggi, dan pelayanan yang responsif.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION (PENGALAMAN KERJA) -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-sub">Rekam Jejak</span>
+          <h2 class="section-title">Pengalaman Kerja</h2>
+          <div class="title-bar"></div>
+          <p class="section-lead">Pengalaman multidimensi mulai dari desain grafis, kontrol kualitas industri, hingga layanan pelanggan.</p>
+        </div>
+
+        <div class="timeline">
+
+          <!-- Experience 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <span class="period-pill">2025 – 2026</span>
+                  <h3 class="exp-role">Operational Staff</h3>
+                  <h4 class="exp-company">Wedang Ronde Merdeka</h4>
+                </div>
+                <span class="exp-tag">Customer Experience</span>
+              </div>
+              <ul class="exp-bullets">
+                <li>Menyiapkan dan menyajikan produk pesanan sesuai standar kualitas terbaik.</li>
+                <li>Mengantar makanan serta melayani dan berinteraksi langsung dengan pengunjung secara ramah.</li>
+                <li>Menjaga kepuasan pelanggan melalui komunikasi yang efektif, empati, dan pelayanan yang cepat dan responsif.</li>
+              </ul>
+              <div class="exp-skills-used">
+                <span class="pill-mini">Pelayanan Pelanggan</span>
+                <span class="pill-mini">Komunikasi Responsif</span>
+                <span class="pill-mini">Quality Service</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <span class="period-pill">2023 – 2025</span>
+                  <h3 class="exp-role">Inspection</h3>
+                  <h4 class="exp-company">PT. Sari Bumi Kusuma</h4>
+                </div>
+                <span class="exp-tag">Quality Assurance</span>
+              </div>
+              <ul class="exp-bullets">
+                <li>Melakukan inspeksi kualitas produk plywood secara ketat sesuai standar kelayakan perusahaan.</li>
+                <li>Memeriksa dan memutuskan kelayakan produk sebelum diproses ke tahap distribusi logistik.</li>
+                <li>Menjaga ketelitian tinggi dan penerapan prosedur <i>quality control</i> guna meminimalkan angka produk cacat.</li>
+              </ul>
+              <div class="exp-skills-used">
+                <span class="pill-mini">Quality Control</span>
+                <span class="pill-mini">Ketelitian Detail</span>
+                <span class="pill-mini">Analisis Standar</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 3 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <span class="period-pill">2019 – 2020</span>
+                  <h3 class="exp-role">Graphic Designer</h3>
+                  <h4 class="exp-company">DX Printing</h4>
+                </div>
+                <span class="exp-tag">Creative & Layout</span>
+              </div>
+              <ul class="exp-bullets">
+                <li>Merancang layout dan aset visual sesuai dengan kebutuhan spesifik dan masukan dari klien.</li>
+                <li>Mengoperasikan mesin cetak serta menjaga standar kualitas tinggi dari hasil cetak fisik.</li>
+                <li>Mengaplikasikan prinsip hierarki visual, keselarasan warna, dan tata letak dalam setiap proyek desain.</li>
+              </ul>
+              <div class="exp-skills-used">
+                <span class="pill-mini">Hierarki Visual</span>
+                <span class="pill-mini">Tata Letak (Layouting)</span>
+                <span class="pill-mini">Aset Desain</span>
+                <span class="pill-mini">Client Communication</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS DUAL SECTION -->
+    <section class="section edu-cert-section" id="education">
+      <div class="container">
+        
+        <div class="dual-columns-grid">
+          
+          <!-- Column 1: Pendidikan -->
+          <div class="edu-column">
+            <div class="section-header align-left">
+              <span class="section-sub">Akademik</span>
+              <h2 class="section-title">Pendidikan</h2>
+              <div class="title-bar"></div>
+            </div>
+
+            <div class="edu-cards-list">
+              
+              <!-- Edu 1 -->
+              <div class="edu-card featured-edu">
+                <div class="edu-icon-wrap">
+                  <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                  </svg>
+                </div>
+                <div class="edu-content">
+                  <span class="edu-years">2023 – Sekarang</span>
+                  <h3 class="edu-school">UNU Kalbar (Universitas Nahdlatul Ulama Kalimantan Barat)</h3>
+                  <h4 class="edu-major">S1 Sistem Informasi</h4>
+                  <p class="edu-desc">
+                    Mempelajari perancangan arsitektur sistem informasi, analisis kebutuhan pengguna, interaksi manusia & komputer, serta logika komputasi untuk produk digital.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Edu 2 -->
+              <div class="edu-card">
+                <div class="edu-icon-wrap">
+                  <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                  </svg>
+                </div>
+                <div class="edu-content">
+                  <span class="edu-years">2018 – 2021</span>
+                  <h3 class="edu-school">SMKN 1 Sungai Raya</h3>
+                  <h4 class="edu-major">Multimedia</h4>
+                  <p class="edu-desc">
+                    Membangun fondasi kuat dalam desain grafis, tipografi visual, komposisi warna, audio-visual, dan pengoperasian software kreatif.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Column 2: Portofolio & Sertifikasi -->
+          <div class="cert-column" id="certifications">
+            <div class="section-header align-left">
+              <span class="section-sub">Kredensial & Karya</span>
+              <h2 class="section-title">Portofolio & Sertifikasi</h2>
+              <div class="title-bar"></div>
+            </div>
+
+            <div class="cert-cards-list">
+              
+              <!-- Cert 1 -->
+              <div class="cert-card">
+                <div class="cert-badge-icon fcc-badge">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                  </svg>
+                </div>
+                <div class="cert-details">
+                  <div class="cert-top">
+                    <h3 class="cert-title">Sertifikasi FreeCodeCamp</h3>
+                    <span class="verified-chip">Verified ✓</span>
+                  </div>
+                  <p class="cert-institution">FreeCodeCamp Platform</p>
+                  <p class="cert-desc">Pembelajaran terstruktur mencakup dasar-dasar perancangan antarmuka responsif, struktur semantik web, dan fondasi logika digital.</p>
+                  <div class="cert-tags">
+                    <span class="tag-outline">Responsive Web</span>
+                    <span class="tag-outline">User Accessibility</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Cert 2 -->
+              <div class="cert-card">
+                <div class="cert-badge-icon solo-badge">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                </div>
+                <div class="cert-details">
+                  <div class="cert-top">
+                    <h3 class="cert-title">Sertifikasi SoloLearn</h3>
+                    <span class="verified-chip">Verified ✓</span>
+                  </div>
+                  <p class="cert-institution">SoloLearn Academy</p>
+                  <p class="cert-desc">Mengasah pemahaman logika algoritma dasar, web development fundamentals, serta best practices pengembangan antarmuka modern.</p>
+                  <div class="cert-tags">
+                    <span class="tag-outline">Web Fundamentals</span>
+                    <span class="tag-outline">UI Logic</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Extra Portfolio Highlight Box -->
+              <div class="portfolio-highlight-box">
+                <div class="ph-content">
+                  <span class="ph-label">✨ Proyek & Desain UI/UX</span>
+                  <h4 class="ph-title">Eksplorasi Figma & Konsep Prototipe</h4>
+                  <p class="ph-text">Mencakup wireframing aplikasi mobile, alur pendaftaran yang efisien, dan antarmuka web responsif berbasis design system.</p>
+                </div>
+                <a href="#contact" class="btn btn-primary-sm">Diskusikan Proyek</a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION (KONTAK) -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-sub">Mari Terhubung</span>
+          <h2 class="section-title">Hubungi Saya</h2>
+          <div class="title-bar"></div>
+          <p class="section-lead">Tertarik untuk berkolaborasi, membahas kesempatan kerja sama, atau mendiskusikan peluang UI/UX Design? Silakan hubungi saya melalui jalur berikut:</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Card 1: WhatsApp / Telepon -->
+          <div class="contact-card">
+            <div class="contact-card-icon wa-icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <h3 class="contact-type">WhatsApp / Telepon</h3>
+            <p class="contact-val">089619591224</p>
+            <div class="contact-actions">
+              <a href="https://wa.me/6289619591224" target="_blank" rel="noopener noreferrer" class="btn btn-outline-sm">Kirim Chat</a>
+              <button class="btn btn-text-sm copy-btn" data-copy="089619591224">Salin Nomor</button>
+            </div>
+          </div>
+
+          <!-- Contact Card 2: Email -->
+          <div class="contact-card">
+            <div class="contact-card-icon email-icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <h3 class="contact-type">Email Resmi</h3>
+            <p class="contact-val">24aidilhidayat@gmail.com</p>
+            <div class="contact-actions">
+              <a href="mailto:24aidilhidayat@gmail.com" class="btn btn-outline-sm">Kirim Email</a>
+              <button class="btn btn-text-sm copy-btn" data-copy="24aidilhidayat@gmail.com">Salin Email</button>
+            </div>
+          </div>
+
+          <!-- Contact Card 3: Lokasi Domisili -->
+          <div class="contact-card">
+            <div class="contact-card-icon location-icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <h3 class="contact-type">Lokasi</h3>
+            <p class="contact-val">Kuala Dua, Kubu Raya</p>
+            <p class="contact-sub">Kalimantan Barat, Indonesia</p>
+            <span class="location-status-badge">Tersedia Remote & On-Site</span>
+          </div>
+
+        </div>
+
+        <!-- Quick Interactive Message Box -->
+        <div class="quick-inquiry-box">
+          <div class="inquiry-info">
+            <h3>Punya Proyek Desain atau Kesempatan Kolaborasi?</h3>
+            <p>Klik tombol untuk langsung menyapa saya di WhatsApp dengan draf pesan instan.</p>
+          </div>
+          <a href="https://wa.me/6289619591224?text=Halo%20Aidil%20Hidayat,%20saya%20telah%20melihat%20website%20CV%20Anda%20dan%20ingin%20berdiskusi%20lebih%20lanjut." target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <span>Mulai Obrolan WhatsApp</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="brand-logo footer-logo">
+          <span class="logo-badge">AH</span>
+          <span class="logo-text">Aidil Hidayat</span>
+        </a>
+        <p class="footer-tagline">
+          UI/UX Designer & Mahasiswa Sistem Informasi • Berdedikasi pada pengalaman pengguna yang berharga.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">Tentang</a>
+        <a href="#skills">Keahlian</a>
+        <a href="#experience">Pengalaman</a>
+        <a href="#education">Pendidikan</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Aidil Hidayat. Dibuat dengan cinta pada desain yang fungsional & rapi.</p>
+        <button id="back-to-top" class="back-to-top-btn" title="Kembali ke atas" aria-label="Kembali ke atas">
+          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification for Copying -->
+  <div id="toast" class="toast-notification">Teks berhasil disalin!</div>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
